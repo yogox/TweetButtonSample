@@ -11,6 +11,12 @@
 		C666A81E281228BF00979731 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C666A81D281228BF00979731 /* ContentView.swift */; };
 		C666A820281228BF00979731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C666A81F281228BF00979731 /* Assets.xcassets */; };
 		C666A823281228BF00979731 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C666A822281228BF00979731 /* Preview Assets.xcassets */; };
+		C666A82B2812290B00979731 /* TwitterAPIKit in Frameworks */ = {isa = PBXBuildFile; productRef = C666A82A2812290B00979731 /* TwitterAPIKit */; };
+		C666A82E2812291600979731 /* PartialSheet in Frameworks */ = {isa = PBXBuildFile; productRef = C666A82D2812291600979731 /* PartialSheet */; };
+		C666A8302812298F00979731 /* TweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C666A82F2812298F00979731 /* TweetView.swift */; };
+		C666A832281229CE00979731 /* TwitterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C666A831281229CE00979731 /* TwitterClient.swift */; };
+		C666A84F2812579100979731 /* DynamicHeightTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C666A84E2812579100979731 /* DynamicHeightTextEditor.swift */; };
+		C666A852281389B600979731 /* TwitterText in Frameworks */ = {isa = PBXBuildFile; productRef = C666A851281389B600979731 /* TwitterText */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,10 @@
 		C666A81D281228BF00979731 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C666A81F281228BF00979731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C666A822281228BF00979731 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C666A82F2812298F00979731 /* TweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetView.swift; sourceTree = "<group>"; };
+		C666A831281229CE00979731 /* TwitterClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterClient.swift; sourceTree = "<group>"; };
+		C666A84D2812376600979731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C666A84E2812579100979731 /* DynamicHeightTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightTextEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C666A852281389B600979731 /* TwitterText in Frameworks */,
+				C666A82E2812291600979731 /* PartialSheet in Frameworks */,
+				C666A82B2812290B00979731 /* TwitterAPIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +64,14 @@
 		C666A81A281228BF00979731 /* TweetButtonSample */ = {
 			isa = PBXGroup;
 			children = (
+				C666A84D2812376600979731 /* Info.plist */,
 				C666A81B281228BF00979731 /* TweetButtonSampleApp.swift */,
 				C666A81D281228BF00979731 /* ContentView.swift */,
 				C666A81F281228BF00979731 /* Assets.xcassets */,
 				C666A821281228BF00979731 /* Preview Content */,
+				C666A82F2812298F00979731 /* TweetView.swift */,
+				C666A831281229CE00979731 /* TwitterClient.swift */,
+				C666A84E2812579100979731 /* DynamicHeightTextEditor.swift */,
 			);
 			path = TweetButtonSample;
 			sourceTree = "<group>";
@@ -83,6 +100,11 @@
 			dependencies = (
 			);
 			name = TweetButtonSample;
+			packageProductDependencies = (
+				C666A82A2812290B00979731 /* TwitterAPIKit */,
+				C666A82D2812291600979731 /* PartialSheet */,
+				C666A851281389B600979731 /* TwitterText */,
+			);
 			productName = TweetButtonSample;
 			productReference = C666A818281228BF00979731 /* TweetButtonSample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +133,11 @@
 				Base,
 			);
 			mainGroup = C666A80F281228BF00979731;
+			packageReferences = (
+				C666A8292812290B00979731 /* XCRemoteSwiftPackageReference "TwitterAPIKit" */,
+				C666A82C2812291600979731 /* XCRemoteSwiftPackageReference "PartialSheet" */,
+				C666A850281389B600979731 /* XCRemoteSwiftPackageReference "twitter-text" */,
+			);
 			productRefGroup = C666A819281228BF00979731 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C666A832281229CE00979731 /* TwitterClient.swift in Sources */,
+				C666A84F2812579100979731 /* DynamicHeightTextEditor.swift in Sources */,
 				C666A81E281228BF00979731 /* ContentView.swift in Sources */,
+				C666A8302812298F00979731 /* TweetView.swift in Sources */,
 				C666A81C281228BF00979731 /* TweetButtonSampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,11 +300,15 @@
 				DEVELOPMENT_TEAM = 39R6S7RLQ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TweetButtonSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,7 +318,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,11 +333,15 @@
 				DEVELOPMENT_TEAM = 39R6S7RLQ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TweetButtonSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +351,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -339,6 +377,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C666A8292812290B00979731 /* XCRemoteSwiftPackageReference "TwitterAPIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mironal/TwitterAPIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		C666A82C2812291600979731 /* XCRemoteSwiftPackageReference "PartialSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AndreaMiotto/PartialSheet";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		C666A850281389B600979731 /* XCRemoteSwiftPackageReference "twitter-text" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nysander/twitter-text.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C666A82A2812290B00979731 /* TwitterAPIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C666A8292812290B00979731 /* XCRemoteSwiftPackageReference "TwitterAPIKit" */;
+			productName = TwitterAPIKit;
+		};
+		C666A82D2812291600979731 /* PartialSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C666A82C2812291600979731 /* XCRemoteSwiftPackageReference "PartialSheet" */;
+			productName = PartialSheet;
+		};
+		C666A851281389B600979731 /* TwitterText */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C666A850281389B600979731 /* XCRemoteSwiftPackageReference "twitter-text" */;
+			productName = TwitterText;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C666A810281228BF00979731 /* Project object */;
 }
