@@ -13,10 +13,10 @@ SwiftUI Tweet button sample to tweet with image.
 ![editingview](https://user-images.githubusercontent.com/6459717/165109217-91493dcd-cb7d-43de-a9af-bc32605edcec.png)
 
 ## Usage
-1. Fill ConsumerKeys.json in Assets with value of your Twitter App's Consumer Keys
+1. Fill [ConsumerKeys.json](https://github.com/yogox/TweetButtonSample/blob/8df6e1359fe686be33bcf0e4cd8d2db9b07a7e73/TweetButtonSample/Assets.xcassets/ConsumerKeys.dataset/ConsumerKeys.json#L2-L3) in Assets with value of your Twitter App's Consumer Keys
 <img width="1026" alt="FillKey" src="https://user-images.githubusercontent.com/6459717/165225216-99dd9e92-864c-4f2c-ac25-aa8f4fb41ecd.png">
 
 2.　Set OAuth1.0a to ON ,App permissions to "Read and write" and "Callback URI/Redirect URL" to any value in your Twitter App's user authentication settings.
 
-3.　Change TwitterClient.swift's properties, oauthCallback and callbackURLScheme suitable for "Callback URI/Redirect URL" set in above.
+3.　Change [TwitterClient.swift](https://github.com/yogox/TweetButtonSample/blob/8df6e1359fe686be33bcf0e4cd8d2db9b07a7e73/TweetButtonSample/TwitterClient.swift#L51-L52)'s properties, oauthCallback and callbackURLScheme suitable for "Callback URI/Redirect URL" set in above.
 <img width="1026" alt="Schema" src="https://user-images.githubusercontent.com/6459717/165227805-3c09ce0f-b815-418f-bfe1-f1fa5ba33f0d.png">
